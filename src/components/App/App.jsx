@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import Forms from "../Forms/forms";
-import Titles from "../MyTitle/title";
+
 import Gallery from "../Gallery/gallery";
 import Search from  "../Search/search";
 import ImageUploader from 'react-images-upload';
@@ -24,11 +24,10 @@ class App extends React.Component {
 
  render() {
    return (
-     <div>
+     
        <div>
          <div className="main">
-           <div className="title-container">
-             <Titles />
+          
            </div>
            <div className="form-container">
            <Search loadText={this.setText}/>
@@ -63,8 +62,8 @@ class App extends React.Component {
              
            </div>
          </div>
-       </div>
-     </div>
+       
+
 
    )
  }

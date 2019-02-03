@@ -8,7 +8,7 @@ class Gallery extends React.Component {
       page: 1 ,
      };
   }
-
+ //button next - metoda onClick pobranie danych - kolejne strony O TYM SAMYM TAGU 
     onClick = () => {
       this.setState({
         page: this.state.page +1 
@@ -33,9 +33,20 @@ class Gallery extends React.Component {
       })  
     })
   }
-                          
+       
 
+ getNextPage =()=>{
+      fetch(this.state.nextPageUrl)   
+        .then( resp =>resp.json())
+        .then(data=> {
+            this.setState({
+            nextPageUrl: data.nextPageUrl
+       })
+      })
+    }
+                   
 
+//POBRANIE zdjęć z api 
 
   componentDidMount() {
     fetch(`https://api.pexels.com/v1/curated`,{
@@ -53,23 +64,9 @@ class Gallery extends React.Component {
     
        
   }
-
   
- 
-   
-
-    getNextPage =()=>{
-      fetch(this.state.nextPageUrl)   
-        .then( resp =>resp.json())
-        .then(data=> {
-            this.setState({
-            nextPageUrl: data.nextPageUrl
-       })
-      })
-    }
-
         
-
+//pobieranie zdjęć z API po tagach
 
   componentDidUpdate(prevProps){
     if (prevProps.term != this.props.term) {//spr czy term props uległ zmianie 
@@ -102,13 +99,7 @@ class Gallery extends React.Component {
             return <li className="galleryBody" key={photo.id}>
             <div className="container">          
                 {/* <div>{photo.photographer} </div> */}
-                <img className="pictures"style={{ opacity:"1",
-                          width:"100",
-                          height:"auto",
-                          transition: "5s ease",
-                          backfaceVisibility:"hidden",
-                          margin:"10px"
-                       }}
+                <img className="pictures"                       
                       src={photo.src.medium} alt=""></img>        
               </div>
           </li> 
@@ -116,8 +107,7 @@ class Gallery extends React.Component {
         }
       </ul>
       <button className="nextButton"
-               onClick ={this.onClick}
-               >Next</button> 
+               onClick ={this.onClick}>Next</button>
     </div>
   }
     
