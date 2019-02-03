@@ -31,18 +31,20 @@ class Search extends React.Component {
     render() {
         return(
             <div>
-                
-                <input className="imput-style" placeholder= "looking for.."
-                    name="tag"
-                    value={this.state.tag}
-                    onChange={this.handleChangeForAll}                                 
-                   
-                />
+               <div className ="inputs">
+                    <input className="imput-style" placeholder= "find by tag... "
+                        name="tag"
+                        value={this.state.tag}
+                        onChange={this.handleChangeForAll}/>
+                    
+                    <input className = "photographer" placeholder =" ...or find by photoghrapher..."/>
+                </div> 
                 <button className ="buttonOne"
                     name="button"
                     onClick={this.onClick}>
                     Get Picture ! 
                 </button>
+                
 
               
 

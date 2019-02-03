@@ -15,7 +15,7 @@ class Gallery extends React.Component {
       },() =>{
         fetch(`https://api.pexels.com/v1/search?query=${this.props.term}`,{
           headers: {
-            "Authorization": "563492ad6f9170000100000119b2c277c7c340bbab928823d2551d3b"
+            "Authorization": "563492ad6f91700001000001a3f69df7408e4f58b2536d0fd82edb30"
           }
         }).then(response => {
           if (response.ok) {
@@ -28,7 +28,7 @@ class Gallery extends React.Component {
       ).then(data => {
         console.log(data);
         this.setState({
-          gallery:data.photo
+          gallery:data.photos
         })
       })  
     })
@@ -51,7 +51,7 @@ class Gallery extends React.Component {
   componentDidMount() {
     fetch(`https://api.pexels.com/v1/curated`,{
       headers: {
-        "Authorization": "563492ad6f9170000100000119b2c277c7c340bbab928823d2551d3b"
+        "Authorization": "563492ad6f91700001000001a3f69df7408e4f58b2536d0fd82edb30"
       }
     })
      .then( resp => resp.json())
@@ -72,7 +72,7 @@ class Gallery extends React.Component {
     if (prevProps.term != this.props.term) {//spr czy term props uległ zmianie 
       fetch(`https://api.pexels.com/v1/search?query=${this.props.term}`,{
         headers: {
-          "Authorization": "563492ad6f9170000100000119b2c277c7c340bbab928823d2551d3b"
+          "Authorization": "563492ad6f91700001000001a3f69df7408e4f58b2536d0fd82edb30"
         }
       })
        .then( resp => resp.json())
@@ -104,7 +104,7 @@ class Gallery extends React.Component {
               </div>
           </li> 
           })}
-        }
+        
       </ul>
       <button className="nextButton"
                onClick ={this.onClick}>Next</button>

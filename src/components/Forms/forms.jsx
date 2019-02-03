@@ -1,12 +1,8 @@
-import React from "react";
+ import React from "react";
 
 
 
-// Collapse 
-// 9:34 AM
-// Utwórz sobie w src w components folder MyMusicInfo i wrzuc ten plik do niego
-// 9:34 AM
-// Forms.js 
+
 
 class Forms extends React.Component {
     constructor(props) {
@@ -45,7 +41,7 @@ onClick = () => {
                 <button> Next</button>
 
     
-            </div>
+          </div>
         );
     }
 }

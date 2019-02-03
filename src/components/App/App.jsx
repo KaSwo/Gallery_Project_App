@@ -42,14 +42,7 @@ class App extends React.Component {
                 onChange={this.onDrop}
                 imgExtension={['.jpg', '.gif', '.png', '.gif']}
                 maxFileSize={5242880}/>
-                {/* <InfiniteScroll
-                pageStart={0}
-                loadMore={loadFunc}
-                hasMore={true || false}
-                loader={<div className="loader" key={0}>Loading ...</div>}
-                >
-                {this.state.text} 
-            </InfiniteScroll> */}
+               
 
             {/* <div className ="Carousel">
              <Carousel/>

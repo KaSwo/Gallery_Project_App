@@ -30,10 +30,25 @@ p {
     margin-left: 100px;
 }
 
+.inputs {
+    display: inline;
+}
+
 .imput-style {
     font-size: 24px;
     display: block;
-    width: 50%;
+    width: 30%;
+    padding-Top: 8;
+    border: 5px double rgba(28, 110, 164, 0.08);
+    border-radius: 6px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.photographer {
+    font-size: 24px;
+    display: block;
+    width: 30%;
     padding-Top: 8;
     border: 5px double rgba(28, 110, 164, 0.08);
     border-radius: 6px;
@@ -81,6 +96,29 @@ li {
     cursor: pointer;
 }
 
+.nextButton {
+    color: #494949 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    border-radius: 6px;
+    display: inline-block;
+    position: center;
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.nextButton:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
 .pictures {
     width: 330px;
     height: 228px;
@@ -99,7 +137,7 @@ li {
 
 .pictures:hover {
     opacity: .7;
-    transform: scale(1.05, 1.07);
+    transform: scale(2.05, 1.07);
     transition-timing-function: ease-out;
     transition-duration: 250ms;
     -webkit-transform: scale(1.05, 1.07);
