@@ -28,6 +28,24 @@ class App extends React.Component {
        <div>
          <div className="main">
           
+          
+           <h1>
+Your first <br></br>ten thousand photos <br></br>will be the worst.<br></br></h1>
+
+<h4> Henri Cartier Bresson</h4>
+<h2>
+Take one of ours...</h2>
+<hr></hr>
+<nav className="navigationUP">
+             <ul className="nawigationUL">
+             <i class="fas fa-fire-alt"></i>
+               <li><a href="#"></a>popular</li>
+               <li><a href="#"></a>photographer</li>
+               <li><a href="#"></a>favourites</li>
+            
+             
+             </ul>
+           </nav>
            </div>
            <div className="form-container">
            <Search loadText={this.setText}/>
@@ -44,10 +62,7 @@ class App extends React.Component {
                 maxFileSize={5242880}/>
                
 
-            {/* <div className ="Carousel">
-             <Carousel/>
-            </div> */}
-                
+            
               
   
 

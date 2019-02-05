@@ -35,8 +35,7 @@ class Search extends React.Component {
                     <input className="imput-style" placeholder= "find by tag... "
                         name="tag"
                         value={this.state.tag}
-                        onChange={this.handleChangeForAll}/>
-                    
+                        onChange={this.handleChangeForAll}/>               
                     
                 </div> 
                 <button className ="buttonOne"
