@@ -13,6 +13,7 @@
         "react-images-upload": "^1.2.6",
         "react-infinite-scroller": "^1.2.4",
         "react-lazy-autoloader": "^1.0.8",
+        "react-native-image-zoom-viewer": "^2.2.25",
         "react-scripts": "2.1.3",
         "react-scroll-loader": "0.0.4"
     },

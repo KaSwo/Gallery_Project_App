@@ -67,9 +67,11 @@ class Gallery extends React.Component {
                         )
                     })}
                 </ul>
+                <div className="buttonPosition">
                 {/*Button Previous i Next - pobranie poprzednich/kolejnych stron dla albumu o danym tagu, lub stron dla albumu strony domyślnej*/}
                 {gallery.prev_page && <button className="prevButton" onClick={() => this.handleRequest(null, gallery.prev_page)}>Previous</button>} {/*Jeżeli obiekt gallery(ze state) posiada klucz prev_page(czyli nie jest pierwszą stroną) to wyrenderuj przycisk Previous. Przycisk na kliknięcie wywołuje metodę handleRequest przekazując jej parametr null jako query oraz atrybut gallery.prev_page(będący adresem Url do następnej strony) jako prevOrNext. Obecność atrybutu prev_page wynika z budowy obiektu(dokumentacja API)).*/}
                 {gallery.next_page && <button className="nextButton" onClick={() => this.handleRequest(null, gallery.next_page)}>Next</button>} {/*Jak wyżej, z tym że atrybut next_page oczywiście nie pojawia się tylko dla ostatniej strony(a nie pierwszej jak dla prev_page)*/}
+            </div>
             </div>
         )
     }

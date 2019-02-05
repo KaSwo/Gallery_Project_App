@@ -37,7 +37,7 @@ class Search extends React.Component {
                         value={this.state.tag}
                         onChange={this.handleChangeForAll}/>
                     
-                    <input className = "photographer" placeholder =" ...or find by photoghrapher..."/>
+                    
                 </div> 
                 <button className ="buttonOne"
                     name="button"
