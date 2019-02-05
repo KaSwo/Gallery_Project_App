@@ -96,7 +96,8 @@ li {
     cursor: pointer;
 }
 
-.nextButton {
+.nextButton,
+.prevButton {
     color: #494949 !important;
     text-transform: uppercase;
     background: #ffffff;
@@ -111,7 +112,8 @@ li {
     cursor: pointer;
 }
 
-.nextButton:hover {
+.nextButton:hover,
+.prevButton:hover {
     color: #ffffff !important;
     background: #f6b93b;
     border-color: #f6b93b !important;
