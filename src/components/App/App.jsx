@@ -1,11 +1,11 @@
 import React from "react";
 import './App.css';
-import Forms from "../Forms/forms";
+//import Forms from "../Forms/forms";
 
 import Gallery from "../Gallery/gallery";
 import Search from  "../Search/search";
 import ImageUploader from 'react-images-upload';
-import Carousel from "../Carousel/carousel";
+//import Carousel from "../Carousel/carousel";
 
 // import InfiniteScroll from 'react-infinite-scroller';
 
@@ -30,23 +30,20 @@ class App extends React.Component {
           
           
            <h1>
-Your first <br></br>ten thousand photos <br></br>will be the worst.<br></br></h1>
+                Your first <br></br>ten thousand photos <br></br>will be the worst.<br></br>
+          </h1>
 
-<h4> Henri Cartier Bresson</h4>
-<h2>
-Take one of ours...</h2>
-<hr></hr>
-<nav className="navigationUP">
-             <ul className="nawigationUL">
-             <i class="fas fa-fire-alt"></i>
-               <li><a href="#"></a>popular</li>
-               <li><a href="#"></a>photographer</li>
-               <li><a href="#"></a>favourites</li>
-            
-             
-             </ul>
+          <h4> Henri Cartier Bresson</h4>
+          <h2>Take one of ours...</h2>
+
+          <nav className="navigationUP">
+                      <ul className="nawigationUL">
+                        <li><a href="#"></a>popular</li>
+                        <li><a href="#"></a>photographer</li>
+                        <li><a href="#"></a>favourites</li>
+                      </ul>
            </nav>
-           </div>
+      </div>
            <div className="form-container">
            <Search loadText={this.setText}/>
            </div>
@@ -54,12 +51,12 @@ Take one of ours...</h2>
              <div className="row">
              
                <Gallery term={this.state.text} />
-               <ImageUploader 
+               {/* <ImageUploader 
                 withIcon={true}
                 buttonText='add your photo'
                 onChange={this.onDrop}
                 imgExtension={['.jpg', '.gif', '.png', '.gif']}
-                maxFileSize={5242880}/>
+                maxFileSize={5242880}/> */}
                
 
             

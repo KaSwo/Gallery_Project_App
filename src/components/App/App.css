@@ -204,3 +204,53 @@ li {
     position: relative;
     z-index: 99;
 }
+
+
+/* ZOOM */
+
+.largeImageContainer {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.close {
+    color: #494949 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px double #494949 !important;
+    border-radius: 6px;
+    display: inline-block;
+    position: center;
+    cursor: pointer;
+}
+
+.nextArrow,
+.prevArrow {
+    color: #494949 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px double #494949 !important;
+    border-radius: 6px;
+    display: inline-block;
+    position: center;
+    cursor: pointer;
+}
+
+.nextArrow:hover,
+.prevArrow:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.activeImage {
+    position: relative;
+    display: center;
+    border: 30px solid #ada6a65d;
+    margin: 2% 10% 2% 10%;
+}
