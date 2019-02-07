@@ -4,10 +4,7 @@ import './App.css';
 
 import Gallery from "../Gallery/gallery";
 import Search from  "../Search/search";
-import ImageUploader from 'react-images-upload';
-//import Carousel from "../Carousel/carousel";
 
-// import InfiniteScroll from 'react-infinite-scroller';
 
 class App extends React.Component {
  constructor(props) {
@@ -36,13 +33,13 @@ class App extends React.Component {
           <h4> Henri Cartier Bresson</h4>
           <h2>Take one of ours...</h2>
 
-          <nav className="navigationUP">
+          {/* <nav className="navigationUP">   DO ROZBUDOWANIA W PRZYSZŁYM ETAPIE
                       <ul className="nawigationUL">
                         <li><a href="#"></a>popular</li>
                         <li><a href="#"></a>photographer</li>
                         <li><a href="#"></a>favourites</li>
                       </ul>
-           </nav>
+           </nav> */}
       </div>
            <div className="form-container">
            <Search loadText={this.setText}/>

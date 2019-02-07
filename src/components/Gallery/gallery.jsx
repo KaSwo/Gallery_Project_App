@@ -87,12 +87,18 @@ class Gallery extends React.Component {
         }
         if(largeImageUrl) {
             largeImage = (
-            <div className='largeImageContainer'>
-                <button className="close"onClick={this.closeImage}>X</button>
                 
-                <img className='activeImage' src={largeImageUrl} alt=''/><button className="nextArrow"onClick={this.switchImage}>&lt;</button>
+            <div className='largeImageContainer'> 
+                    
+                
+                <img className='activeImage' src={largeImageUrl} alt=''/>
+                <div className="largeImageButtons">
+                <button className="close"onClick={this.closeImage}>X</button>
+                <button className="nextArrow"onClick={this.switchImage}>&lt;</button>
                 <button className="prevArrow"onClick={this.switchImage}>&gt;</button>
             </div>
+            </div>
+            
         )}
         return (
             <div>
